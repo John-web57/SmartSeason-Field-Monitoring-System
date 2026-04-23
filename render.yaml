@@ -18,11 +18,12 @@ services:
       - key: CORS_ORIGIN
         sync: false
 
-  - type: static
+  - type: web
     name: smartseason-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: dist
+    staticPublishPath: frontend/dist
     routes:
       - type: rewrite
         source: /*
