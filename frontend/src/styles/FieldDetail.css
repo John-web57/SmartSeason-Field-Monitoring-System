@@ -1,0 +1,260 @@
+.field-detail {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.status-reason-box {
+  padding: 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid;
+}
+
+.status-reason-box.severity-high {
+  background-color: #f8d7da;
+  border-left-color: #e74c3c;
+}
+
+.status-reason-box.severity-medium {
+  background-color: #fff3cd;
+  border-left-color: #f39c12;
+}
+
+.status-reason-box.severity-low {
+  background-color: #d1ecf1;
+  border-left-color: #3498db;
+}
+
+.reason-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.reason-icon {
+  font-size: 1.2rem;
+}
+
+.reason-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.reason-text {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.field-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ecf0f1;
+
+  h1 {
+    margin: 0;
+    flex: 1;
+  }
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  &.status-active {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  &.status-at_risk {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+
+  &.status-completed {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+}
+
+.field-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.detail-item {
+  label {
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #7f8c8d;
+    margin: 0;
+    font-size: 1.1rem;
+
+    &.stage-badge {
+      background-color: #ecf0f1;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+
+    .days-left {
+      color: #e74c3c;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.field-description {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+
+  p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+.admin-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ecf0f1;
+
+  button {
+    flex: 1;
+    max-width: 300px;
+  }
+}
+
+.update-section {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #ecf0f1;
+}
+
+.update-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.update-form {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    label {
+      font-weight: 600;
+      color: #2c3e50;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+}
+
+.updates-timeline {
+  margin-top: 2rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.update-item {
+  padding: 1.5rem;
+  border-left: 3px solid #27ae60;
+  background-color: #f8f9fa;
+  margin-bottom: 1rem;
+  border-radius: 0 4px 4px 0;
+
+  .update-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    align-items: center;
+  }
+
+  .update-stage {
+    background-color: #27ae60;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .update-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+
+  .update-agent {
+    background-color: #e8f5e9;
+    color: #27ae60;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .update-notes {
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.5;
+  }
+}

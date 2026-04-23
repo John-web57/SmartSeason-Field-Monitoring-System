@@ -1,0 +1,87 @@
+.field-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.field-progress-bar {
+  width: calc(100% + 3rem);
+  margin: -1.5rem -1.5rem 0 -1.5rem;
+  height: 4px;
+  background-color: #ecf0f1;
+  position: relative;
+}
+
+.field-progress-bar .progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%);
+  transition: width 0.3s ease;
+}
+
+.field-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+
+  h3 {
+    margin: 0;
+    color: #2c3e50;
+    flex: 1;
+  }
+}
+
+.field-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+
+    strong {
+      color: #2c3e50;
+    }
+
+    .days-left {
+      color: #e74c3c;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.stage-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+
+  .stage-label {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  .stage-badge {
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
