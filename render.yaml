@@ -3,7 +3,7 @@ services:
     name: smartseason-backend
     runtime: node
     rootDir: backend
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --include=dev && npm run build
     startCommand: npm start
     plan: free
     envVars:
@@ -22,8 +22,8 @@ services:
     name: smartseason-frontend
     runtime: static
     rootDir: frontend
-    buildCommand: npm install && npm run build
-    staticPublishPath: frontend/dist
+    buildCommand: npm install --include=dev && npm run build
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*
